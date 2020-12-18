@@ -19,6 +19,7 @@
     </properties>
 
     <dependencies>
+        <!--MVC AND REST SUPPORT-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -33,13 +34,25 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+        <!--ORM HIBERNATE SUPPORT-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!--MYSQL JDBC DRIVER-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!--UNIT TESTING SUPPORT-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <!--SPRING BOOT MAVEN PLUGIN SUPPORT (PACKAGING AND RUNNING)-->
     <build>
         <plugins>
             <plugin>
